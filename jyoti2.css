@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #000;
+  align-items: center;
+}
+
+.logo {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.join-buttno, .sign-in-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.movie1 {
+  padding: 2rem;
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.movie-card {
+  background-color: #222;
+  padding: 0.5rem;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.tag {
+  background-color: red;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+}
+
+.top10 {
+  background-color: darkred;
+}
+.row {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+.row img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.row img:hover {
+  transform: scale(1.05);
+}
+.netflix-footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #757575;
+  padding: 70px 0 30px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+} 
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer-contact p {
+  font-size: 1em;
+  color: #757575;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.links-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-column li {
+  margin-bottom: 16px;
+}
+
+.links-column a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 0.8125em;
+}
+
+.links-column a:hover {
+  text-decoration: underline;
+}
+.language-selector {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 140px;
+}
+
+.language-selector select {
+  background-color: #000;
+  border: 1px solid #333;
+  color: #999;
+  padding: 12px 26px 12px 15px;
+  font-size: 0.875em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #757575;
+  pointer-events: none;
+}
+
+
+.footer-brand {
+  font-size: 0.8125em;
+  color: #757575;
+}
+@media (max-width: 800px) {
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .netflix-footer {
+    padding: 50px 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-container {
+    padding: 0 20px;
+  }
+}

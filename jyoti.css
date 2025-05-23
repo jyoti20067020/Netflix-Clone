@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: transparent;
+    background-color: black;
     align-items: center;
 }
 .logo {
@@ -82,7 +82,7 @@ body {
     margin-bottom: 1rem;
     display: flex;
     text-align: center;
-        background: transparent;
+    background: transparent;
 
     
 }
@@ -142,6 +142,7 @@ body {
   border-top: 8px solid #222;
   padding: 2rem 0;
   margin-left: -260px;
+  background-color: #000;
 }
 .FAQ__heading {
   font-size: 20px;

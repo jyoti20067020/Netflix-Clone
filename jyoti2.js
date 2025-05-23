@@ -1,0 +1,1 @@
+console.log("Netflix clone script loaded.");
